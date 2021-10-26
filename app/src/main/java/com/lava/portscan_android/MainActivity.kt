@@ -53,8 +53,50 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun confirmFireMissilesPort() {
+        val timeout_port = 1500
+        val timeout_ip = 1500
+        var type = 2;
+        var ip = "";
+        var port = "1433";
+        val newFragment: NoticeDialogFragment =
+            NoticeDialogFragment(
+                timeout_ip,
+                timeout_port,
+                type,
+                ip,
+                port,
+                object : NoticeDialogFragment.NoticeDialogListener {
+                    override fun onDialogPositiveClick(dialog: DialogFragment?, ip: String) {
+                        textviewStatus.text = ip;
+                        dialog?.dismiss()
+
+                    }
+
+                    override fun onDialogNegativeClick(dialog: DialogFragment?) {
+                        dialog?.dismiss()
+
+                    }
+
+                    override fun onIpClicked(ip: String, dialog: DialogFragment?) {
+                        textviewStatus.text = ip;
+                        dialog?.dismiss()
+                    }
+
+                })
+        newFragment.isCancelable = false
+        val fr = supportFragmentManager
+        newFragment.show(fr, "missiles")
+
+
+    }
+
     fun clikeme(view: android.view.View) {
 
         confirmFireMissiles()
+    }
+
+    fun portscan(view: android.view.View) {
+        confirmFireMissilesPort()
     }
 }

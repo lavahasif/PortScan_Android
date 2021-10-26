@@ -73,6 +73,8 @@ class NoticeDialogFragment(
         savedInstanceState: Bundle?
     ): View? {
         mrootView = inflater.inflate(R.layout.content_portscan, container, false)
+        if (type == 2)
+            mrootView?.findViewById<TextView>(R.id.ports)?.setText(port)
         mrootView?.findViewById<Button>(R.id.button_ok)?.setOnClickListener {
             if (mDataset.size >= 1)
                 listener.onDialogPositiveClick(this, mDataset.get(0).toString())

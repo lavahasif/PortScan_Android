@@ -10,6 +10,8 @@
         android:id="@+id/textviewStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="163dp"
+        android:layout_marginBottom="163dp"
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,11 +20,29 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="97dp"
-        android:layout_height="42dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
         android:onClick="clikeme"
-        android:text="Button"
-        tools:ignore="OnClick"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="345dp" />
+        android:layout_marginBottom="344dp"
+        android:text="IP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewStatus"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/button3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="portscan"
+        android:text="Portscan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textviewStatus"
+        tools:ignore="OnClick" />
 </androidx.constraintlayout.widget.ConstraintLayout>

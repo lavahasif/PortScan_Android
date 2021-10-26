@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="Theme.PortScan_Android.NoActionBar">
+    <style name="NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
