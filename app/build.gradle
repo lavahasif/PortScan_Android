@@ -50,3 +50,19 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
+task androidSourcesJar(type: Jar) {
+    classifier 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+//project.afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+//                from components.productionRelease
+//                groupId = 'com.lava.portscan_android'
+//                artifactId = 'id'
+//                version = Config.libraryVersion
+//            }
+//        }
+//    }
+//}
