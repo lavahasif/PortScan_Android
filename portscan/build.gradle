@@ -61,6 +61,9 @@ project.afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
+                groupId='com.lava_port'
+                artifactId='portscan'
+                version='1'
             }
         }
     }
