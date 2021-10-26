@@ -318,7 +318,12 @@ open class ConnectedDevice(var contexts: Context) {
 
                 if (pingHost(ips, 1000) == 0) {
 //                    println("Connection============>$ips")
-                    iDeviceConnected.DeviceConnected(ips);
+
+                    try {
+                        iDeviceConnected.let { it.DeviceConnected(ips); }
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
 //                Log.i("Connection=======>", "$ips".toString())
                 };
 
