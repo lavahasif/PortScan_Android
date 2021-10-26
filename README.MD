@@ -7,7 +7,7 @@ Add Manifest
 
 
 <h4>For showing port enabled Ip</h4>
-![](.README.MD_images/port.png)
+
 ```kotlin
  fun ShowIp() {
     val timeout_port = 1500
@@ -47,7 +47,11 @@ Add Manifest
 
 }
 ```
+
+![](.README.MD_images/port.png)
+
 <h4>showing devices</h4>
+
 ```kotlin
  fun showPort() {
     val timeout_port = 1500
