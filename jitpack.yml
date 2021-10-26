@@ -3,4 +3,4 @@ jdk:
 before_install:
   - chmod +x gradlew
 install:
-  - ./gradlew build :{iosdialog}:publishToMavenLocal
+  - ./gradlew build :{portscan}:publishToMavenLocal
