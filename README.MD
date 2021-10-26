@@ -1,4 +1,4 @@
-
+*****ShowDevice IP in Wi-Fi && Show PortAvailable IP******
 **build.gradle(app)**
 ```groovy
 dependencies {
