@@ -54,15 +54,15 @@ task androidSourcesJar(type: Jar) {
     classifier 'sources'
     from android.sourceSets.main.java.srcDirs
 }
-//project.afterEvaluate {
-//    publishing {
-//        publications {
+project.afterEvaluate {
+    publishing {
+        publications {
 //            release(MavenPublication) {
 //                from components.productionRelease
 //                groupId = 'com.lava.portscan_android'
 //                artifactId = 'id'
 //                version = Config.libraryVersion
 //            }
-//        }
-//    }
-//}
+        }
+    }
+}
