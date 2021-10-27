@@ -7,6 +7,7 @@ dependencies {
     implementation 'com.github.lavahasif:PortScan_Android:1.0.9'
 // -----------
 }
+**------------------IF gradle greater than 7------------------------**
 ```
 **settings.gradle**
 ```groovy
@@ -40,7 +41,7 @@ allprojects {
     }
 }
 ```
-
+**------------------IF gradle greater than 7------------------------**
 **Add Manifest**
 
 ```xml
