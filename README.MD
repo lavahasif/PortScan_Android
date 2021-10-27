@@ -4,7 +4,7 @@
 ```groovy
 dependencies {
 //..........
-    implementation 'com.github.lavahasif:PortScan_Android:1.0.9'
+    implementation 'com.github.lavahasif:PortScan_Android:1.0.11'
 // -----------
 }
 
