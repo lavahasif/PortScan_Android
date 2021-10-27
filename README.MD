@@ -10,6 +10,7 @@ dependencies {
 
 ```
 **------------------IF gradle greater than 7------------------------**
+<br/>
 **settings.gradle**
 ```groovy
 import org.gradle.api.initialization.resolve.RepositoriesMode
