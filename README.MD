@@ -7,8 +7,9 @@ dependencies {
     implementation 'com.github.lavahasif:PortScan_Android:1.0.9'
 // -----------
 }
-**------------------IF gradle greater than 7------------------------**
+
 ```
+**------------------IF gradle greater than 7------------------------**
 **settings.gradle**
 ```groovy
 import org.gradle.api.initialization.resolve.RepositoriesMode
