@@ -52,7 +52,7 @@ allprojects {
 
 
 <h4>For showing port enabled Ip</h4>
-
+**Using In Kotlin**
 ```kotlin
  fun ShowIp() {
     val timeout_port = 1500
@@ -136,7 +136,53 @@ allprojects {
 
 }
 ```
+**Using In Java**
+```java
+    private void showDevice(int i) {
+        int timeout_port = 3000;
+        int timeout_ip = 3000;
+        //type 1 -for show all device
+        //     2 -for show port available device
+        int type = i; 
+        String ip = "";
+        String port = "1433";//empty means automatically select port 1433
+        NoticeDialogFragment newFragment =
+                new NoticeDialogFragment(
+                        timeout_ip,
+                        timeout_port,
+                        type,
+                        ip,
+                        port,
+                        new NoticeDialogFragment.NoticeDialogListener() {
+                            @Override
+                            public void onIpClicked(@NonNull String s, @Nullable DialogFragment dialogFragment) {
+                                IP.setText(s);
+                                assert dialogFragment != null;
+                                dialogFragment.dismiss();
+                            }
 
+                            @Override
+                            public void onDialogPositiveClick(@Nullable DialogFragment dialogFragment, @NonNull String s) {
+                                IP.setText(s);
+                                assert dialogFragment != null;
+                                dialogFragment.dismiss();
+                            }
+
+                            @Override
+                            public void onDialogNegativeClick(@Nullable DialogFragment dialogFragment) {
+
+                                assert dialogFragment != null;
+                                dialogFragment.dismiss();
+                            }
+                        }
+                );
+        newFragment.setCancelable(false);
+        FragmentManager fr = getSupportFragmentManager();
+        newFragment.show(fr, "missiles");
+
+
+    }
+```
 
 
 ![](.README.MD_images/1677a230.png)
