@@ -42,6 +42,7 @@ allprojects {
 }
 ```
 **------------------IF gradle greater than 7------------------------**
+<br/>
 **Add Manifest**
 
 ```xml
