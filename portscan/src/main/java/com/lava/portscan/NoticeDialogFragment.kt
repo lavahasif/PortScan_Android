@@ -181,7 +181,7 @@ class NoticeDialogFragment(
             mDataset.clear()
             val ipAddress_util = if (ip.length < 3) myIp?.getIPAddress_Util(true) else ip
             //        s = mDataset.length;
-            if (ipAddress_util != null) {
+            if (ipAddress_util != null && ipAddress_util != "Null") {
                 connectedDevice?.gethostData(ipAddress_util, object : IDeviceConnected {
                     override fun DeviceConnected(ip: String) {
                         val stringStringMap = connectedDevice!!.portScan(
@@ -200,6 +200,12 @@ class NoticeDialogFragment(
                         }
                     }
                 })
+            } else {
+
+                val findViewById = mrootView?.findViewById<LottieAnimationView>(R.id.animation_view)
+                findViewById
+                    ?.setAnimation("nowifi.json")
+                findViewById?.playAnimation()
             }
         }
     var mDataset = ArrayList<String>()
