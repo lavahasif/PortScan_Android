@@ -139,7 +139,7 @@ allprojects {
 
 }
 ```
-**Using In Java**
+**Using Java**
 ```java
     private void showDevice(int i) {
         int timeout_port = 3000;
