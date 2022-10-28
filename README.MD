@@ -6,7 +6,10 @@
 ```groovy
 dependencies {
 //..........
-    implementation 'com.github.lavahasif:PortScan_Android:1.0.11'
+    implementation 'com.github.lavahasif:PortScan_Android:2'
+Or
+
+implementation 'com.github.lavahasif:PortScan_Android:1.0.11'
 // -----------
 }
 
