@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="buttons" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">#002366</item>
+    </style>
+
+    <style name="Theme.PortScan_Android.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.PortScan_Android.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
